@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#f5f6f8">
+    <title>ConnectHub | Create your profile</title>
+    <link rel="stylesheet" href="/styles.css">
+    <script src="/app.js" defer></script>
+</head>
+<body>
+<main class="page-shell">
+    <header class="site-header">
+        <a class="brand" href="/" aria-label="ConnectHub home">
+            <span class="brand-mark" aria-hidden="true">c</span>
+            <span>connecthub</span>
+        </a>
+        <span class="header-note">A little more connected.</span>
+    </header>
+
+    <section class="layout" aria-labelledby="page-title">
+        <div class="intro">
+            <p class="eyebrow">YOUR SPACE, YOUR PEOPLE</p>
+            <h1 id="page-title">Make a little room for connection.</h1>
+            <p class="intro-copy">Create your profile and introduce yourself to the community.</p>
+            <div class="social-art" aria-hidden="true">
+                <span class="orbit orbit-one"></span>
+                <span class="orbit orbit-two"></span>
+                <span class="avatar avatar-one">J</span>
+                <span class="avatar avatar-two">M</span>
+                <span class="avatar avatar-three">A</span>
+                <span class="avatar avatar-four">S</span>
+                <span class="sparkle sparkle-one">✳</span>
+                <span class="sparkle sparkle-two">✦</span>
+            </div>
+        </div>
+
+        <section class="form-card" aria-labelledby="form-title">
+            <div class="card-heading">
+                <p class="eyebrow">GET STARTED</p>
+                <h2 id="form-title">Create your profile</h2>
+                <p>It only takes a moment.</p>
+            </div>
+
+            <form id="user-form">
+                <label for="name">Full name</label>
+                <input id="name" name="name" type="text" autocomplete="name"
+                       placeholder="e.g. Alex Morgan" maxlength="100" required>
+
+                <label for="email">Email address</label>
+                <input id="email" name="email" type="email" autocomplete="email"
+                       placeholder="you@example.com" maxlength="254" required>
+
+                <label for="password">Password</label>
+                <input id="password" name="password" type="password" autocomplete="new-password"
+                       placeholder="At least 8 characters" minlength="8" maxlength="72" required>
+
+                <label for="bio">A little about you <span class="optional">(optional)</span></label>
+                <textarea id="bio" name="bio" rows="3" maxlength="500"
+                          placeholder="What would you like people to know?"></textarea>
+
+                <p class="form-note">Your password is securely hashed before it is saved.</p>
+                <button id="submit-button" type="submit">
+                    <span>Create account</span>
+                    <span aria-hidden="true">→</span>
+                </button>
+                <p id="form-message" class="form-message" role="status" aria-live="polite"></p>
+            </form>
+        </section>
+    </section>
+
+    <section class="members" aria-labelledby="members-title">
+        <div class="members-heading">
+            <div>
+                <p class="eyebrow">THE COMMUNITY</p>
+                <h2 id="members-title">Recently joined</h2>
+            </div>
+            <span id="member-count" class="member-count">Loading profiles…</span>
+        </div>
+        <div id="user-list" class="user-list" aria-live="polite"></div>
+    </section>
+</main>
+</body>
+</html>

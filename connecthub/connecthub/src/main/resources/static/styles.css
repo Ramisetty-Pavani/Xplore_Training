@@ -1,0 +1,485 @@
+.\mvnw.cmd spring-boot:run "-Dspring-boot.run.arguments=--server.port=8081":root {
+    color-scheme: light;
+    font-family: "Segoe UI", Arial, sans-serif;
+    color: #25283a;
+    background: #f5f6f8;
+    font-synthesis: none;
+    text-rendering: optimizeLegibility;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    min-width: 320px;
+    margin: 0;
+}
+
+button,
+input,
+textarea {
+    font: inherit;
+}
+
+.page-shell {
+    width: min(1100px, calc(100% - 48px));
+    margin: 0 auto;
+}
+
+.site-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 88px;
+    border-bottom: 1px solid #e8e9ee;
+}
+
+.brand {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    color: #24263a;
+    font-family: "Segoe UI", Arial, sans-serif;
+    font-size: 19px;
+    font-weight: 800;
+    letter-spacing: -0.8px;
+    text-decoration: none;
+}
+
+.brand-mark {
+    display: grid;
+    width: 34px;
+    height: 34px;
+    place-items: center;
+    border-radius: 11px;
+    background: #5d5ce2;
+    color: #fff;
+    font-size: 22px;
+}
+
+.header-note {
+    color: #858798;
+    font-size: 13px;
+}
+
+.layout {
+    display: grid;
+    grid-template-columns: 1fr 440px;
+    align-items: center;
+    gap: 72px;
+    min-height: 575px;
+    padding: 54px 0 66px;
+}
+
+.intro {
+    position: relative;
+    align-self: stretch;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.eyebrow {
+    margin: 0 0 12px;
+    color: #6868d8;
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 1.7px;
+}
+
+h1,
+h2,
+p {
+    margin-top: 0;
+}
+
+h1,
+h2 {
+    font-family: "Segoe UI", Arial, sans-serif;
+    letter-spacing: -1.5px;
+}
+
+h1 {
+    max-width: 470px;
+    margin-bottom: 18px;
+    font-size: clamp(38px, 5vw, 54px);
+    line-height: 1.12;
+}
+
+.intro-copy {
+    max-width: 360px;
+    margin-bottom: 0;
+    color: #777b8c;
+    font-size: 15px;
+    line-height: 1.7;
+}
+
+.social-art {
+    position: relative;
+    width: 370px;
+    height: 190px;
+    margin-top: 42px;
+}
+
+.orbit {
+    position: absolute;
+    left: 42px;
+    top: 15px;
+    width: 265px;
+    height: 150px;
+    border: 1px solid #dfdefa;
+    border-radius: 50%;
+    transform: rotate(-13deg);
+}
+
+.orbit-two {
+    left: 20px;
+    top: 28px;
+    width: 300px;
+    height: 124px;
+    transform: rotate(17deg);
+}
+
+.avatar {
+    position: absolute;
+    display: grid;
+    width: 58px;
+    height: 58px;
+    place-items: center;
+    border: 5px solid #f5f6f8;
+    border-radius: 50%;
+    color: #fff;
+    font-family: "Segoe UI", Arial, sans-serif;
+    font-size: 17px;
+    font-weight: 700;
+    box-shadow: 0 9px 22px #35345a1a;
+}
+
+.avatar-one {
+    left: 47px;
+    top: 60px;
+    background: #f19a7a;
+}
+
+.avatar-two {
+    left: 137px;
+    top: 20px;
+    background: #8a88e8;
+}
+
+.avatar-three {
+    left: 218px;
+    top: 83px;
+    background: #73bba4;
+}
+
+.avatar-four {
+    left: 287px;
+    top: 37px;
+    background: #e6b860;
+}
+
+.sparkle {
+    position: absolute;
+    color: #e1a744;
+    font-size: 20px;
+}
+
+.sparkle-one {
+    left: 13px;
+    top: 26px;
+}
+
+.sparkle-two {
+    right: 12px;
+    bottom: 19px;
+    color: #8886e7;
+}
+
+.form-card {
+    padding: 34px;
+    border: 1px solid #ececf1;
+    border-radius: 18px;
+    background: #fff;
+    box-shadow: 0 22px 60px #33354a0c;
+}
+
+.card-heading {
+    margin-bottom: 25px;
+}
+
+.card-heading .eyebrow {
+    margin-bottom: 8px;
+}
+
+.card-heading h2,
+.members-heading h2 {
+    margin-bottom: 5px;
+    font-size: 24px;
+}
+
+.card-heading > p:last-child {
+    margin-bottom: 0;
+    color: #858798;
+    font-size: 13px;
+}
+
+#user-form {
+    display: flex;
+    flex-direction: column;
+}
+
+#user-form label {
+    margin: 0 0 7px;
+    color: #36394b;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+#user-form input,
+#user-form textarea {
+    width: 100%;
+    margin-bottom: 17px;
+    padding: 12px 13px;
+    border: 1px solid #e5e6ed;
+    border-radius: 8px;
+    outline: none;
+    background: #fff;
+    color: #282b3b;
+    font-size: 13px;
+    transition: border-color 160ms ease, box-shadow 160ms ease;
+}
+
+#user-form input::placeholder,
+#user-form textarea::placeholder {
+    color: #b1b3bf;
+}
+
+#user-form input:focus,
+#user-form textarea:focus {
+    border-color: #7775e6;
+    box-shadow: 0 0 0 3px #7775e61c;
+}
+
+#user-form textarea {
+    min-height: 80px;
+    resize: vertical;
+}
+
+.optional {
+    color: #a0a2ae;
+    font-weight: 400;
+}
+
+.form-note {
+    margin: -2px 0 15px;
+    color: #858798;
+    font-size: 11px;
+}
+
+#submit-button {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 13px 15px;
+    border: 0;
+    border-radius: 8px;
+    background: #5d5ce2;
+    color: #fff;
+    font-size: 13px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 160ms ease, transform 160ms ease;
+}
+
+#submit-button:hover {
+    transform: translateY(-1px);
+    background: #4e4dcf;
+}
+
+#submit-button:disabled {
+    opacity: 0.65;
+    cursor: wait;
+}
+
+#submit-button span:last-child {
+    font-size: 19px;
+    font-weight: 400;
+}
+
+.form-message {
+    min-height: 18px;
+    margin: 12px 0 0;
+    font-size: 12px;
+}
+
+.form-message.success {
+    color: #21815e;
+}
+
+.form-message.error {
+    color: #b43a4a;
+}
+
+.members {
+    padding: 27px 0 58px;
+    border-top: 1px solid #e8e9ee;
+}
+
+.members-heading {
+    display: flex;
+    align-items: end;
+    justify-content: space-between;
+    margin-bottom: 18px;
+}
+
+.members-heading .eyebrow {
+    margin-bottom: 6px;
+}
+
+.members-heading h2 {
+    margin-bottom: 0;
+    font-size: 21px;
+}
+
+.member-count {
+    color: #858798;
+    font-size: 12px;
+}
+
+.user-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 12px;
+}
+
+.user-card {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    min-width: 0;
+    padding: 14px;
+    border: 1px solid #e9eaf0;
+    border-radius: 11px;
+    background: #fff;
+}
+
+.user-initial {
+    display: grid;
+    flex: 0 0 38px;
+    width: 38px;
+    height: 38px;
+    place-items: center;
+    border-radius: 50%;
+    background: #efeffe;
+    color: #5958ca;
+    font-family: 'Manrope', sans-serif;
+    font-weight: 700;
+}
+
+.user-details {
+    min-width: 0;
+}
+
+.user-details strong,
+.user-details span {
+    display: block;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.user-details strong {
+    margin-bottom: 3px;
+    font-size: 12px;
+}
+
+.user-details span {
+    color: #858798;
+    font-size: 11px;
+}
+
+.user-details .user-bio {
+    margin-top: 5px;
+    color: #66697a;
+    white-space: normal;
+}
+
+.empty-state {
+    grid-column: 1 / -1;
+    padding: 20px;
+    border: 1px dashed #dfe0e8;
+    border-radius: 10px;
+    color: #858798;
+    font-size: 13px;
+    text-align: center;
+}
+
+@media (max-width: 800px) {
+    .layout {
+        grid-template-columns: 1fr;
+        gap: 26px;
+        padding-top: 44px;
+    }
+
+    .intro {
+        min-height: 310px;
+    }
+
+    .social-art {
+        position: absolute;
+        right: -10px;
+        bottom: -20px;
+        transform: scale(0.8);
+        transform-origin: bottom right;
+    }
+
+    .intro-copy {
+        max-width: 290px;
+    }
+
+    .form-card {
+        width: min(100%, 500px);
+        justify-self: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .page-shell {
+        width: min(100% - 32px, 500px);
+    }
+
+    .site-header {
+        min-height: 70px;
+    }
+
+    .header-note {
+        font-size: 11px;
+    }
+
+    .layout {
+        padding: 35px 0 42px;
+    }
+
+    .intro {
+        min-height: 265px;
+    }
+
+    h1 {
+        max-width: 330px;
+        font-size: 39px;
+    }
+
+    .social-art {
+        right: -65px;
+        bottom: -33px;
+        transform: scale(0.62);
+    }
+
+    .form-card {
+        padding: 25px 20px;
+    }
+}
